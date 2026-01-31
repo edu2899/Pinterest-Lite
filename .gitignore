@@ -1,15 +1,17 @@
 # Ambiente virtual
+.venv/
 venv/
 __pycache__/
 *.pyc
 
 # Banco de dados
 *.db
-instance/
+instance/*
+!instance/.gitkeep
 
 # Uploads de usuários
-static/fotos_posts/*
-!static/fotos_posts/.gitkeep
+pinterestlite/static/fotos_posts/*
+!pinterestlite/static/fotos_posts/.gitkeep
 
 # Segredos
 secretkey.py

@@ -1,10 +1,11 @@
 # Pinterest Lite 📌
 
-Pinterest Lite é uma aplicação web inspirada no Pinterest, desenvolvida com Flask. O projeto tem foco em aprendizado de backend, autenticação de usuários, upload de imagens e organização de aplicações web.
+Projeto web inspirado no Pinterest, desenvolvido com Flask, com foco em aprendizado de backend, autenticação de usuários e upload de imagens.
 
 ## 🚀 Funcionalidades
 - Cadastro e login de usuários
 - Autenticação com Flask-Login
+- Criptografia de senha com Flask-Bcrypt
 - Upload de imagens
 - Feed com posts
 - Perfil de usuário
@@ -18,10 +19,46 @@ Pinterest Lite é uma aplicação web inspirada no Pinterest, desenvolvida com F
 - Flask-Bcrypt
 - Flask-WTF
 - HTML / CSS
+- SQLite
+
+---
 
 ## ⚙️ Como rodar o projeto localmente
 
-### 1. Clone o repositório
-```bash
+### 1️⃣ Clone o repositório
+```md
 git clone https://github.com/edu2899/Pinterest-Lite.git
 cd Pinterest-Lite
+
+
+### 2️⃣ Crie e ative um ambiente virtual
+python -m venv venv
+venv\Scripts\activate
+
+## Linux / Mac
+python3 -m venv venv
+source venv/bin/activate
+
+
+### 3️⃣ Instale as dependências
+pip install -r requirements.txt
+
+
+### 4️⃣ Configure a SECRET_KEY
+setx SECRET_KEY "sua_secret_key_aqui"
+
+## No Linux / Mac:
+export SECRET_KEY="sua_secret_key_aqui"
+
+## Você pode gerar uma chave segura rodando:
+python secretkey.py
+
+
+### 5️⃣ Crie o banco de dados
+python criar_banco.py
+
+### 6️⃣ Execute o projeto
+python main.py
+
+## Acesse no navegador:
+http://127.0.0.1:5000
