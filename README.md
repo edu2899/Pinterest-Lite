@@ -82,3 +82,6 @@ Rode: python main.py
 ```bash
 http://127.0.0.1:5000
 ```
+
+
+# Este projeto foi desenvolvido com fins educacionais e para prática de Flask e backend.
